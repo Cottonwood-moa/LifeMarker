@@ -1,0 +1,102 @@
+// Default variable overrides
+// $primary: #FDC000;
+$container-max-widths: (
+  sm: 540px,
+  md: 704px,
+  lg: 924px,
+  xl: 1140px,
+  xxl: 1364px
+);
+
+// Required
+@import "../../node_modules/bootstrap/scss/functions";
+@import "../../node_modules/bootstrap/scss/variables";
+@import "../../node_modules/bootstrap/scss/mixins";
+
+@import "../../node_modules/bootstrap/scss/bootstrap";
+
+@keyframes undefined-easeOutBounce {
+	0% {
+		transform: translateX(2000px);
+	}
+
+	12% {
+		transform: translateX(900px);
+	}
+
+	24% {
+		transform: translateX(600px);
+	}
+
+	36% {
+		transform: translateX(20px);
+	}
+
+	54% {
+		transform: translateX(350px);
+	}
+
+	74% {
+		transform: translateX(20px);
+	}
+
+	82% {
+		transform: translateX(70px);
+	}
+
+	92% {
+		transform: translateX(10px);
+	}
+
+	96% {
+		transform: translateX(20px);
+	}
+
+	100% {
+		transform: translateX(0px);
+	}
+
+}
+
+@keyframes scale-easeInBounce {
+	0% {
+		transform: scale(0);
+	}
+
+	4% {
+		transform: scale(0.11);
+	}
+
+	8% {
+		transform: scale(0.44);
+	}
+
+	18% {
+		transform: scale(0.98);
+	}
+
+	26% {
+		transform: scale(0.75);
+	}
+
+	46% {
+		transform: scale(0.98);
+	}
+
+	64% {
+		transform: scale(0.94);
+	}
+
+	76% {
+		transform: scale(0.99);
+	}
+
+	88% {
+		transform: scale(0.98);
+	}
+
+	100% {
+		transform: scale(1);
+	}
+
+}
