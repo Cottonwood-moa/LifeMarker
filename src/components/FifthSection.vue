@@ -315,7 +315,7 @@ export default {
           position:absolute;
           transition:.4s;
           transform:scale(0.1,0.1);
-          transition-delay: .2s;
+          transition-delay: .1s;
           background: url(https://media4.giphy.com/media/l4Ki9L3zCGw2WPk7S/giphy.gif?cid=ecf05e470zjrkfm4f6hjh447kgljgp2nh6pk1ug5j20hxyj1&rid=giphy.gif&ct=g) no-repeat center center;
           background-size: 100% 100%;
         }
@@ -323,7 +323,7 @@ export default {
           position:absolute;
           transition:.4s;
           transform:scale(0.1,0.1);
-          transition-delay: .4s;
+          transition-delay: .2s;
           background: url(https://media2.giphy.com/media/l3q2sUCenoWY2Cp6U/giphy.gif?cid=ecf05e47t4vd9qrt5r8auk09bn8w6nlnawjlj5xkchl9mp8n&rid=giphy.gif&ct=g) no-repeat center center;
           background-size: 100% 100%;
         }
@@ -331,7 +331,7 @@ export default {
           position:absolute;
           transition:.4s;
           transform:scale(0.1,0.1);
-          transition-delay: .6s;
+          transition-delay: .3s;
           background: url(https://media1.giphy.com/media/ckB9wvcONerp73fvkQ/giphy.gif?cid=ecf05e47bvda488e2k1y5ftvh8s4c1woi5lmr5o3eyk7u476&rid=giphy.gif&ct=g) no-repeat center center;
           background-size: 100% 100%;
           
@@ -340,7 +340,7 @@ export default {
           position:absolute;
           transition:.4s;
           transform:scale(0.1,0.1);
-          transition-delay: .8s;
+          transition-delay: .4s;
           background: url(https://media3.giphy.com/media/3o6ozBzviUKC1FsvqE/giphy.gif?cid=ecf05e47sxux4be56819zr35vomx0mvhwjfogawxdlwsnzte&rid=giphy.gif&ct=g) no-repeat center center;
           background-size: 100% 100%;
         }
@@ -348,7 +348,7 @@ export default {
           position:absolute;
           transition:.4s;
           transform:scale(0.1,0.1);
-          transition-delay: 1s;
+          transition-delay: .5s;
           background: url(https://media1.giphy.com/media/0olsSaw3F2J2ldjvbb/giphy.gif?cid=ecf05e47wpw0fkwo2k1e6kxb8aq2atu5yex67kced50s46no&rid=giphy.gif&ct=g) no-repeat center center;
           background-size: 100% 100%;
         }
