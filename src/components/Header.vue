@@ -31,35 +31,35 @@ export default {
       navigations:[
         {
           id:'intro',
-          name:'소개',
+          name:'Intro',
           section: ()=>{
             return this.$store.state.header.section1
           }
         },
           {
           id:'sites',
-          name:'사이트',
+          name:'Member',
           section: ()=>{
             return this.$store.state.header.section2
           }
         },
           {
           id:'pic',
-          name:'활동',
+          name:'Activity',
          section: ()=>{
             return this.$store.state.header.section3
           }
         },
           {
           id:'cus',
-          name:'평가',
+          name:'Why',
           section: ()=>{
             return this.$store.state.header.section4
           }
         },
           {
           id:'con',
-          name:'컨택',
+          name:'Contact',
           section: ()=>{
             return this.$store.state.header.section5
           }

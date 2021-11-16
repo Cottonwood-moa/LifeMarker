@@ -118,8 +118,9 @@
         </div>
       </div>
       <div
-        class="detail"
+        class="detail emailDetail"
         v-else-if="contact.emailToggle">
+        <EmailSubmit />
         <div
           class="btn btn btn-outline-dark btn-lg"
           @click="emailBool()">
@@ -131,7 +132,11 @@
 </template>
 
 <script>
+import EmailSubmit from '~/components/EmailSubmit'
 export default {
+  components:{
+    EmailSubmit
+  },
   data(){
     return{
      contact:{
@@ -147,7 +152,7 @@ export default {
       boardToggle:false,
       cottonwoodToggle:false,
       okkToggle:false,
-      emailToggle:false
+      emailToggle:false,
      }
     }
   },
@@ -190,9 +195,11 @@ export default {
     },
     earlyBool(){
       this.contact.earlyToggle = !this.contact.earlyToggle
-    }
+    },
+
   },
   mounted(){
+    this.$store.dispatch('header/scrollToSection5',this.$refs.section5)
     this.contact.tel = this.$refs.tel
     this.contact.email = this.$refs.email
     this.contact.board = this.$refs.board
@@ -221,6 +228,12 @@ export default {
     color:#333;
     background: url(https://images.pexels.com/photos/1477156/pexels-photo-1477156.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940) no-repeat center center fixed;
   background-size: 100% 100%;
+  .allBool{
+    position:absolute;
+    width:100%;
+    height:100%;
+    z-index:1;
+  }
     .container{
       @include center;
       width:100%;
@@ -289,6 +302,7 @@ export default {
           font-size:24px;
           background-color:$white;
           cursor: pointer;
+          z-index:2;
         }
         .subCircle.cottonwood{
           position:absolute;
@@ -349,12 +363,12 @@ export default {
         width:1000px;
         height:1000px;
         border-radius: 50%;
+        border: 80px solid rgb(194, 194, 194);
         background-color: $white;
         z-index: 1;
         @include media-breakpoint-down(lg){
           border-radius: 20px;
         }
-      
         .CottonwoodProfile{
           width:300px;
           height:300px;
