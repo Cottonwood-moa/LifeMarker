@@ -263,6 +263,7 @@ export default {
           display:flex;
           flex-direction: column;
           justify-content: center;
+
           .metaTitle{
             color:#333;
             font-size:36px;
@@ -275,7 +276,16 @@ export default {
             color: rgb(139, 139, 139);
             font-size:24px;
           }
+          
         }
+        @include media-breakpoint-down(lg){
+            .metaImg{
+              display:none;
+            }
+            .metaText{
+              text-align:center;
+            }
+          }
       }
     }
   }

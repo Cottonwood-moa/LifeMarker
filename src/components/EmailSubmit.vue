@@ -15,29 +15,33 @@
     target="iframe1"
     ref="form"
     class="section">
-    <div>
+    <span class="further">*메일은 90일간 보관 후 삭제됩니다. <br /> *확인시간 평일 오전 10:00 ~ 오후 4:00</span>
+    <div
+      class="inputNameSection">
       <label
         for="exampleFormControlInput1"
         ref="name"
-        class="form-label"></label>
+        class="form-label">
+        <div class="fas fa-user fa-lg"></div>
+      </label>
       <input
         type="name"
         name="name"
-        class="form-control form-control-lg"
+        class="inputName form-control form-control-lg"
         id="exampleFormControlInput1"
         placeholder="Please enter your name"
         v-model="name"
         @keydown.enter.prevent />
     </div>
-    <div>
+    <div class="inputEmailSection">
       <label
         for="exampleFormControlInput1"
-        class="form-label"><span style="font-size=12px; color:rgb(226, 226, 226);">*메일 확인 시간 평일 오전10:00 ~ 오후16:00</span></label>
+        class="form-label"><div class="fas fa-envelope-open-text fa-lg"></div></label>
       <input
         type="email"
         name="email"
         ref="email"
-        class="form-control form-control-lg"
+        class="inputEmail form-control form-control-lg"
         id="exampleFormControlInput1"
         placeholder="Please enter your email : example@example.com"
         v-model="email" 
@@ -45,9 +49,9 @@
     </div>
     <div>
       <div class="mb-3">
-        <label
+        <!-- <label
           for="exampleFormControlTextarea1"
-          class="form-label"><span style="font-size=12px; color:rgb(226, 226, 226);">*메일은 90일간 보관 후 삭제됩니다.</span></label>
+          class="form-label"></label> -->
         <textarea
           v-model="text"
           type="text"
@@ -194,15 +198,47 @@ input[type="submit"]{
   height:400px;
   border-radius: 50%;
   z-index:3;
-  border: 30px solid rgb(226, 226, 226);
+  border: 30px solid rgb(181, 205, 223);
   box-sizing: border-box;
   transform : scale(1.0,1.0);
-  background: url(https://media0.giphy.com/media/8sXvnfSos1ot59qBf7/giphy.gif?cid=790b76113b1aa4a4af94d01bf2b7c76127c8c2a7766bcbb6&rid=giphy.gif&ct=g) no-repeat center center;
-  background-size: 100% 100%;
+  background: url('~/assets/emailLoading.gif') no-repeat center center;
+  background-size: 101% 101%;
   transition:.4s
 }
 .section{
   position:relative;
+  .further{
+    color:#333;
+    font-size: 18px;
+  }
+  .inputNameSection{
+    display:flex; 
+    align-items: center;
+    justify-content: center;
+    margin-top: 32px;
+    .form-label{
+      width:32px;
+      height:32px;
+      margin: 12px;
+    }
+    .inputName{
+      width:450px;
+    }
+  }
+  .inputEmailSection{
+    display:flex; 
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 12px;
+    .inputEmail{
+      width:450px;
+    }
+    .form-label{
+      width:32px;
+      height:32px;
+      margin: 12px;
+      }
+    }
   .submitButton{
     text-align: center;
     font-size: 48px;
@@ -213,7 +249,6 @@ input[type="submit"]{
   }
 }
 #exampleFormControlInput1{
-  width:500px;
 }
 #exampleFormControlTextarea1{
   height:200px;
@@ -223,6 +258,5 @@ input[type="submit"]{
   font-size: 24px;
 }
 input{
-  margin-bottom:24px;
 }
 </style>

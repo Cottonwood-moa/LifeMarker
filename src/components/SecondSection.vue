@@ -95,12 +95,12 @@
           <div
             data-aos="fade-right"
             data-aos-duration="1000">
-            <a :href="info1.github">
+            <a :href="info3.github">
               <img
                 src="~/assets/github.png"
                 alt="" />
             </a>
-            <a :href="info1.blog">  
+            <a :href="info3.blog">  
               <img
                 src="~/assets/blog.png"
                 alt="" />
@@ -129,6 +129,8 @@ export default {
       },
       info3:{
         name:'OkkBBo',
+        github:'https://github.com/ohjunyeong',
+        blog:'https://hihihi23.tistory.com/'
       }
     }
   },
@@ -193,7 +195,7 @@ span{
         .infoPic{
          @include infoPic;
          background: url(https://media2.giphy.com/media/l2Sqb0owUC5s5tz5m/giphy.gif?cid=ecf05e47301lyybvrlfx1bhuoegyhfl7wh1i0h3awca5ldrf&rid=giphy.gif&ct=g) no-repeat center center;
-        background-size: 100% 100%;
+        background-size: 101% 101%;
         }
         .infoText{
           margin:12px;
@@ -229,12 +231,12 @@ span{
         .infoPic{
          @include infoPic;
           background: url(https://media2.giphy.com/media/l3q2sUCenoWY2Cp6U/giphy.gif?cid=ecf05e47t4vd9qrt5r8auk09bn8w6nlnawjlj5xkchl9mp8n&rid=giphy.gif&ct=g) no-repeat center center;
-          background-size: 100% 100%;
+          background-size: 101% 101%;
         }
         .infoPicBreak{
           @include infoPic;
           background: url(https://media2.giphy.com/media/l3q2sUCenoWY2Cp6U/giphy.gif?cid=ecf05e47t4vd9qrt5r8auk09bn8w6nlnawjlj5xkchl9mp8n&rid=giphy.gif&ct=g) no-repeat center center;
-          background-size: 100% 100%;
+          background-size: 101% 101%;
           display:none;
         }
         .infoText{
@@ -277,7 +279,7 @@ span{
         .infoPic{
          @include infoPic;
           background: url(https://media4.giphy.com/media/l4Ki9L3zCGw2WPk7S/giphy.gif?cid=ecf05e470zjrkfm4f6hjh447kgljgp2nh6pk1ug5j20hxyj1&rid=giphy.gif&ct=g) no-repeat center center;
-          background-size: 100% 100%;
+          background-size: 101% 101%;
          
         }
         .infoText{

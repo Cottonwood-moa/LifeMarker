@@ -47,7 +47,7 @@ $secondary-color: #ffe221;
 $tertiary-color: #ffffff;
 section{
   background: url(https://64.media.tumblr.com/2b0ec5e7d4763b0cc6aaba6982be379c/tumblr_occujlvMQE1qze3hdo1_r2_500.gif) no-repeat center center fixed;
-  background-size: 100% 100%;
+  background-size: 101% 101%;
   font-family: 'Nanum Brush Script', cursive;
   font-weight:700;
 }
