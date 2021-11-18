@@ -1,18 +1,42 @@
 
 <template>
-  <h1>
-    <i class="fas fa-user"></i> <!-- uses solid style -->
-    <i class="fab fa-github-square"></i> <!-- uses brand style -->
-    <i class="fas fa-camera"></i>
-    <i class="fas fa-address-card"></i>
-    <i class="fas fa-address-card"></i>
-  </h1>
+  <div
+    ref="test">
+    출력되나이거
+  </div>
+  <div
+    v-if="toggle"
+    ref="test2">
+    테스트
+  </div>
+  <button @click="toggleBool">
+    버튼
+  </button>
 </template>
 <script>
 
+export default {
+  data(){
+    return{
+      toggle:false,
+      test2:()=>{
+        return this.$refs.test2
+      }
+    }
+  },
+  mounted(){
+    console.log('mounted',this.$refs.test2)
+  },
+  methods:{
+    toggleBool(){
+      this.toggle = !this.toggle
+    }
+  },
+  watch:{
+    test2: function(){
+      console.log('성공',this.test2)
+    }
+  }
+}
+
 </script>
-
-<style lang="scss" scoped>
-
-
-</style>

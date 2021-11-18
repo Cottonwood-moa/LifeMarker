@@ -161,7 +161,6 @@ span{
     height: auto;
     background-color: $white;
     font-size:24px;
-    font-family: 'Do Hyeon', sans-serif;
     .container{
       position:relative;
       width:100%;

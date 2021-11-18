@@ -118,7 +118,6 @@ export default {
     height:800px;
     overflow:hidden;
     font-size:24px;
-    font-family: 'Do Hyeon', sans-serif;
     .container{
       width:100%;
       height: 100%;
@@ -132,7 +131,6 @@ export default {
         height: 320px;
         margin:0 24px;
       }
-    
       .bottomEl{
         display:flex;
         width:calc(124*3)px;

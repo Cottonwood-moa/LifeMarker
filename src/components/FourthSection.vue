@@ -159,7 +159,6 @@ export default {
  .section4{
     width:100%;
     background-color: rgb(250, 250, 250);
-    font-family: 'Do Hyeon', sans-serif;
     color:#333;
     .container{
       position:relative;

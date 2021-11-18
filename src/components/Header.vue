@@ -105,7 +105,6 @@ a{
 }
 header{
   top:-140px;
-  font-family: 'Do Hyeon', sans-serif;
   font-size:24px;
   display:flex;
   flex-direction: column;
