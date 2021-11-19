@@ -26,6 +26,16 @@
         class="bot">
       </div>
       <div
+        class="ps"
+        v-if="!loadEl">
+        * Team Life Marker에서 만든 챗봇입니다.
+      </div>
+      <div
+        class="ps"
+        v-if="!loadEl">
+        * 자세한 문의는 Contact 섹션을 참고해주세요.
+      </div>
+      <div
         v-show="!loadEl"
         class="messageContent">
         <div
@@ -81,9 +91,7 @@
           </div>
           <div
             class="loading"
-            ref="answer1Loading"
-            style="background-color:blue;">
-            로딩중
+            ref="answer1Loading">
           </div>
           <div>
             <div
@@ -113,9 +121,7 @@
           </div>
           <div
             class="loading"
-            ref="answer2Loading"
-            style="background-color:blue;">
-            로딩중
+            ref="answer2Loading">
           </div>
           <div>
             <div
@@ -145,9 +151,7 @@
           </div>
           <div
             class="loading"
-            ref="answer3Loading"
-            style="background-color:blue;">
-            로딩중
+            ref="answer3Loading">
           </div>
           <div>
             <div
@@ -177,9 +181,7 @@
           </div>
           <div
             class="loading"
-            ref="answer4Loading"
-            style="background-color:blue;">
-            로딩중
+            ref="answer4Loading">
           </div>
           <div>
             <div
@@ -330,6 +332,9 @@ export default {
       this.$refs.goBack2.style.display = 'none'
       this.$refs.goBack3.style.display = 'none'
       this.$refs.goBack4.style.display = 'none'
+
+      this.loadEl = true
+
     },
     load(){
       return new Promise((resolve)=>{
@@ -555,51 +560,47 @@ export default {
           .message{
             margin-left:8px;
           }
+          .goBack{
+                cursor: pointer;
+                margin-top:8px;
+                display:none;
+                transition:.2s;
+                &:hover{
+                  background-color:$primary
+                }
+              }
+          .loading{
+                width:100px;
+                height: 40px;
+                transition: 0.05s;
+                background-color:rgb(220, 220, 220);
+                background:url(https://media1.giphy.com/media/grNkIEN4dkiMXFLIE9/giphy.gif?cid=ecf05e47fshpk4z5y5ouko3wcryacopvbdzod0feif8vg97t&rid=giphy.gif&ct=s) no-repeat center center ;
+                background-size: 101% 101%;
+                border-radius:10px;
+                margin-left:8px;
+                margin-top:8px;
+              }
            &.answer1{
               display:none;
-              .loading{
-                transition: 0.05s;
-              }
               .answer1-message{
-                display:none;
-              }
-              .goBack{
                 display:none;
               }
             }
             &.answer2{
               display:none;
-              .loading{
-                transition: 0.05s;
-              }
               .answer2-message{
-                display:none;
-              }
-              .goBack{
                 display:none;
               }
             }
             &.answer3{
               display:none;
-              .loading{
-                transition: 0.05s;
-              }
               .answer3-message{
-                display:none;
-              }
-              .goBack{
                 display:none;
               }
             }
             &.answer4{
               display:none;
-              .loading{
-                transition: 0.05s;
-              }
               .answer4-message{
-                display:none;
-              }
-              .goBack{
                 display:none;
               }
             }
@@ -633,7 +634,7 @@ export default {
           background-color: $white;
           .question{
             cursor: pointer;  
-            transition:.4s;
+            transition:.2s;
             &.question1{
               &:hover{
                 background-color:$primary;
@@ -678,7 +679,7 @@ export default {
       right:0;
       left:0;
       margin:auto;
-      background-color:blue;
+      background:url(https://media1.giphy.com/media/grNkIEN4dkiMXFLIE9/giphy.gif?cid=ecf05e47fshpk4z5y5ouko3wcryacopvbdzod0feif8vg97t&rid=giphy.gif&ct=s) no-repeat center center ;
     }
   }
 </style>
