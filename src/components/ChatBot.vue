@@ -39,6 +39,10 @@
         v-show="!loadEl"
         class="messageContent">
         <div
+          class="date">
+          {{ date }}
+        </div>
+        <div
           class="message-left"
           ref="greeting">
           <div
@@ -255,7 +259,8 @@ export default {
         question2:true,
         question3:true,
         question4:true
-      }
+      },
+      date:''
     }
   },
   mounted(){
@@ -348,6 +353,7 @@ export default {
       if(this.toggle){
         await this.chatBotDisplayShow()
         await this.chatBotScaleShow()
+        await this.getData()
         await this.load()
       }else if(!this.toggle){
         this.$refs.chatBot.style.display = 'none'
@@ -369,6 +375,13 @@ export default {
           this.$refs.chatBot.style.transform = 'scale(1.0,1.0)'
           resolve()
         },1)
+      })
+    },
+     async getData(){
+      new Promise((resolve)=>{
+      const date = new Date()
+       this.date = date.getFullYear() + ' - ' + (date.getMonth()+1) + ' - ' + date.getDate() 
+        resolve()
       })
     },
     chosenQuestion(q){
@@ -445,11 +458,13 @@ export default {
       await this.answerMsgShow(answerMsgEl)
       await this.goBackShow(goBackEl)
     },
+   
     // 챗봇 대답 async/await
     async chatBotAnswer(loadingEl,answerMsgEl,goBackEl){
       await this.loadingScale(loadingEl)
       await this.loadingDisplay(loadingEl)
       await this.msgGoBackShow(answerMsgEl,goBackEl)
+      await this.getData()
       await this.scrollControl()
     }
   }
@@ -512,7 +527,7 @@ export default {
         margin-right:16px;
       }
       .title{
-        color:rgb(155, 155, 155);
+        color:$primary;
         font-size: 32px;
         margin-left:16px;
         display:flex;
@@ -548,6 +563,12 @@ export default {
         border-top:2px solid #333;
         display:flex;
         flex-direction: column;
+        .date{
+          margin-top:12px;
+          text-align:center; 
+          color:#333;
+          font-weight:700;
+        }
         .message-left{
           position:relative;
           display:flex;
@@ -632,9 +653,19 @@ export default {
           padding:8px;
           margin:12px;
           background-color: $white;
+           .message{
+            width:fit-content;
+            height:fit-content;
+            right:0;
+            padding:8px;
+            margin: 8px;
+            border-radius: 20px;
+            background-color: rgb(230, 230, 230);
+          }
           .question{
             cursor: pointer;  
             transition:.2s;
+            margin:2px;
             &.question1{
               &:hover{
                 background-color:$primary;
@@ -656,18 +687,8 @@ export default {
               }
             }
           }
-           .message{
-            width:fit-content;
-            height:fit-content;
-            right:0;
-            padding:8px;
-            margin: 8px;
-            border-radius: 20px;
-            background-color: rgb(230, 230, 230);
-          }
         }
       }
-      
     }
     .load{
       position:absolute;
