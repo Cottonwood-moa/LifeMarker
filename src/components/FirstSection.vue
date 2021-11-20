@@ -35,7 +35,6 @@
 export default {
   mounted(){
     this.$store.dispatch('header/scrollToSection1',this.$refs.section1)
-    //console.log(this.$refs.section2)
   }
 }
 </script>

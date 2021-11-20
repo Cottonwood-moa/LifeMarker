@@ -17,7 +17,6 @@ export default{
     updateState(state, payload) {
       Object.keys(payload).forEach(key => {
         state[key] = payload[key]
-        console.log(payload[key])
       })
     }
   },
