@@ -3,7 +3,7 @@
 Vue.js 사용에 익숙해지기 위해 만든 `팀 소개` 컨셉의 홈페이지 입니다.  
 간단한 자동응답 기능을 가진 `챗봇`도 직접 구현했습니다.  
 ㅤ  
-![image](https://user-images.githubusercontent.com/79053495/150994713-180fd635-1b38-48eb-9dfc-20fcd3bcfa4c.png)
+![image](https://user-images.githubusercontent.com/79053495/150994713-180fd635-1b38-48eb-9dfc-20fcd3bcfa4c.png)  
 ㅤ  
 ![image](https://user-images.githubusercontent.com/79053495/150994845-e30d5d85-53f8-4f21-a14b-2965e5c92e4b.png)  
 ㅤ  
