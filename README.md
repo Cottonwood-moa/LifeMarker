@@ -7,7 +7,7 @@ Vue.js 사용에 익숙해지기 위해 만든 `팀 소개` 컨셉의 홈페이�
 ㅤ  
 ![image](https://user-images.githubusercontent.com/79053495/150994845-e30d5d85-53f8-4f21-a14b-2965e5c92e4b.png)  
 ㅤ  
-![image](https://user-images.githubusercontent.com/79053495/150993359-19d9cb7a-6a87-4d5d-a3f8-9e29a3ab47df.png)  
+![image](https://user-images.githubusercontent.com/79053495/150995157-de450be7-c2e1-496e-ab10-a44148c9dd50.png)  
 ㅤ  
 ## Specs
 
