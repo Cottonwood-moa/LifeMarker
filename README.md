@@ -57,4 +57,6 @@ __babel-eslint__: ES6 이상의 코드(Babel)를 분석 __(+ESLint)__
 __vuex__: 중앙 집중식 저장소 __(+Vuex)__  
 __vue-router__: 라우터 __(+VueRouter)__  
 
-
+## info  
+ㅤ  
+[깃허브 저장소](https://github.com/Cottonwood-moa/LifeMarker)  
